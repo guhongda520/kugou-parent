@@ -1,0 +1,4 @@
+cn\com\kugou\domain\service\UserService.class
+cn\com\kugou\domain\dao\UserDao.class
+cn\com\kugou\domain\mapper\UserMapper.class
+cn\com\kugou\domain\entity\User.class
