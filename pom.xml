@@ -12,6 +12,8 @@
         <module>kugou-domain</module>
         <module>kugou-provider</module>
         <module>kugou-server</module>
+        <module>kugou-provider</module>
+        <module>kugou-provider</module>
     </modules>
 
     <properties>

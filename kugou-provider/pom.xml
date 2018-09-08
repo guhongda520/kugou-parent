@@ -9,33 +9,27 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>kugou.parents</groupId>
     <artifactId>kugou-provider</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>kugou.parents</groupId>
-            <artifactId>kugou-common</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>kugou.parents</groupId>
             <artifactId>kugou-domainipml</artifactId>
-        </dependency>
-        <!-- eureka server -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
         <!-- 启动 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
-        <!-- web -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+
 
         <!-- aop -->
         <dependency>
@@ -69,11 +63,8 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
-
-       <!-- <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-        </dependency>-->
     </dependencies>
+
+
 
 </project>
