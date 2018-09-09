@@ -5,3 +5,8 @@
 *.iml
 /.idea/
 kugou-provider/target/
+kugou-server/target/
+kugou-common/target/
+kugou-mybatis/target/
+kugou-domain/target/
+kugou-domianimpl/target/
