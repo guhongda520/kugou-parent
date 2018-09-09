@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class UserDaoImpl implements UserDao{
-    @Autowired
+    @Autowired(required = false)
     private UserMapper mapper;
 
     @Override

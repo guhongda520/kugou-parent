@@ -1,4 +1,4 @@
-package cn.com.kugou.server.application;
+package cn.com.kugou.provider;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableDiscoveryClient
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@ComponentScan(basePackages = {"cn.com.kugou.domain**","cn.com.kugou.domainimpl**","cn.com.kugou.server**"})
+@ComponentScan(basePackages = {"cn.com.kugou.domain**","cn.com.kugou.domainimpl**","cn.com.kugou.provider**"})
 public class ProviderApplication {
 
     public static void main(String[] args) {
