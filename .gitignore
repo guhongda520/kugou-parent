@@ -4,6 +4,8 @@
 *.project
 *.iml
 /.idea/
+*.jar
+*.lst
 kugou-provider/target/
 kugou-server/target/
 kugou-common/target/
