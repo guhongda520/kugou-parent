@@ -20,8 +20,8 @@ public class UserController {
 
     @GetMapping("/user")
     public String user(){
-        User user = userService.getUser();
+        User user = (User)userService.getUser();
         System.out.println(user);
-        return JSONArray.toJSONString(userService.getUser());
+        return JSONArray.toJSONString(user);
     }
 }

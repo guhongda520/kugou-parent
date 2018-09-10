@@ -1,5 +1,6 @@
 package cn.com.kugou.provider;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -15,7 +16,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableDiscoveryClient
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@ComponentScan(basePackages = {"cn.com.kugou.domain**","cn.com.kugou.domainimpl**","cn.com.kugou.provider**"})
+@MapperScan("cn.com.kugou.domain.mapper")
+@ComponentScan(basePackages = {"cn.com.kugou.provider","cn.com.kugou.domainimpl**"})
 public class ProviderApplication {
 
     public static void main(String[] args) {
