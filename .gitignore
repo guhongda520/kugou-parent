@@ -6,6 +6,7 @@
 /.idea/
 *.jar
 *.lst
+*.log
 kugou-provider/target/
 kugou-server/target/
 kugou-common/target/
