@@ -1,8 +1,6 @@
 package cn.com.kugou.provider;
 
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.Banner;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -23,8 +21,6 @@ import org.springframework.context.annotation.ComponentScan;
 public class ProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication springApplication = new SpringApplication(ProviderApplication.class);
-        springApplication.setBannerMode(Banner.Mode.OFF);
-        springApplication.run(args);
+        new SpringApplicationBuilder(ProviderApplication.class).web(true).run(args);
     }
 }
