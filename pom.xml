@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>kugou-common</module>
-        <module>kugou-mybatis</module>
+        <module>kugou-comsumer</module>
         <module>kugou-domainipml</module>
         <module>kugou-domain</module>
         <module>kugou-provider</module>
@@ -47,7 +47,7 @@
             </dependency>
             <dependency>
                 <groupId>kugou.parents</groupId>
-                <artifactId>kugou-mybatis</artifactId>
+                <artifactId>kugou-comsumer</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -81,12 +81,6 @@
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-logging</artifactId>
-                    </exclusion>
-                </exclusions>
                 <version>1.3.0</version>
             </dependency>
 
