@@ -26,7 +26,8 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long"),
     })
-    public String user(){
+    public String user() throws InterruptedException {
+        Thread.sleep(3000L);
         User user = (User)userService.getUser();
         System.out.println(user);
         return JSONArray.toJSONString(user);
