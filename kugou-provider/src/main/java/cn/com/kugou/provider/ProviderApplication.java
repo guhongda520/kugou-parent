@@ -17,7 +17,8 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @MapperScan("cn.com.kugou.domain.mapper")
-@ComponentScan(basePackages = {"cn.com.kugou.provider**","cn.com.kugou.domainimpl**","cn.com.kugou.common**","cn.com.kugou.comsumer**"})
+@ComponentScan(basePackages = {"cn.com.kugou.provider**","cn.com.kugou.domainimpl**","cn.com.kugou.common**",
+        "cn.com.kugou.comsumer**", "cn.com.kugou.job**"})
 public class ProviderApplication {
 
     public static void main(String[] args) {

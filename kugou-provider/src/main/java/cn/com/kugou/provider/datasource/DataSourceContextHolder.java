@@ -20,6 +20,7 @@ public class DataSourceContextHolder {
     // 设置数据源名
     public static void setDB(String dbType) {
         logger.info("----------切换到{}数据源---------", dbType);
+        dbType = dbType == null ? "primaryDataSource" : dbType;
         contextHolder.set(dbType);
     }
 

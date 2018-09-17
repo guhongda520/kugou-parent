@@ -10,7 +10,7 @@
 kugou-provider/target/
 kugou-server/target/
 kugou-common/target/
-kugou-mybatis/target/
+kugou-job/target/
 kugou-domain/target/
 kugou-domainipml/target/
 kugou-comsumer/target/

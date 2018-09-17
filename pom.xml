@@ -12,6 +12,7 @@
         <module>kugou-domain</module>
         <module>kugou-provider</module>
         <module>kugou-server</module>
+        <module>/kugou-job</module>
     </modules>
 
     <properties>
@@ -68,6 +69,11 @@
             <dependency>
                 <groupId>kugou.parents</groupId>
                 <artifactId>kugou-provider</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>kugou.parents</groupId>
+                <artifactId>kugou-job</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <!-- 组件  -->
