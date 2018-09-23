@@ -17,6 +17,7 @@ import javax.mail.internet.MimeMessage;
  * @date 2018/9/12
  */
 @RestController
+@RequestMapping("/email")
 public class EmailController {
 
     @Autowired

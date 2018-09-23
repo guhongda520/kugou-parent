@@ -13,6 +13,7 @@
         <module>kugou-provider</module>
         <module>kugou-server</module>
         <module>/kugou-job</module>
+        <module>../kugou-geteway</module>
     </modules>
 
     <properties>

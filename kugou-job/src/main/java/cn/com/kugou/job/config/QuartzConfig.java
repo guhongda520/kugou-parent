@@ -21,8 +21,8 @@ import javax.sql.DataSource;
  * @details
  * @date 2018/9/14
  */
-@Configuration
-@EnableScheduling
+//@Configuration
+//@EnableScheduling
 public class QuartzConfig {
 
     /**

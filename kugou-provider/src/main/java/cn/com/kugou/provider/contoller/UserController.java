@@ -8,7 +8,11 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.annotations.ApiIgnore;
+
+import java.util.List;
 
 /**
  * @author 黄尚
@@ -17,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2018/9/5
  */
 @RestController
+@RequestMapping("/user")
 public class UserController {
     @Autowired(required = false)
     private UserService userService;
@@ -26,8 +31,10 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long"),
     })
-    public String user() throws InterruptedException {
-        Thread.sleep(3000L);
+    public String user(@ApiIgnore Long id) throws InterruptedException {
+        if(id % 2 ==0){
+             Thread.sleep(10000L);
+        }
         User user = (User)userService.getUser();
         System.out.println(user);
         return JSONArray.toJSONString(user);
