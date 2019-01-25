@@ -1,8 +1,6 @@
 package cn.com.kugou.provider.contoller;
 
 import cn.com.kugou.common.email.EmailTemplate;
-import cn.com.kugou.domain.entity.User;
-import com.alibaba.fastjson.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

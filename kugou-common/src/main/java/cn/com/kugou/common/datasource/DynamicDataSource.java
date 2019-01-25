@@ -1,4 +1,4 @@
-package cn.com.kugou.provider.datasource;
+package cn.com.kugou.common.datasource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

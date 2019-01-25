@@ -18,10 +18,6 @@
         </dependency>
         <dependency>
             <groupId>kugou.parents</groupId>
-            <artifactId>kugou-domain</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>kugou.parents</groupId>
             <artifactId>kugou-job</artifactId>
         </dependency>
 
@@ -89,6 +85,21 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.taobao.txc</groupId>
+            <artifactId>txc-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taobao.middleware</groupId>
+            <artifactId>logger.api</artifactId>
+            <version>0.2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.taobao.diamond</groupId>
+            <artifactId>diamond-client</artifactId>
+            <version>edas-3.7.3</version>
         </dependency>
     </dependencies>
 

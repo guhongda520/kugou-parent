@@ -11,4 +11,6 @@ import cn.com.kugou.domain.entity.User;
 public interface UserService {
 
      User getUser();
+
+     Integer gtsTest() throws Exception;
 }

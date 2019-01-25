@@ -19,7 +19,7 @@ public class TimeInit {
     /**
      * 注入任务调度器
      */
-//    @Autowired
+    @Autowired
     private Scheduler scheduler;
 
     public void init() throws SchedulerException {

@@ -31,12 +31,13 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long"),
     })
-    public String user(@ApiIgnore Long id) throws InterruptedException {
+    public String user(@ApiIgnore Long id) throws Exception {
         if(id % 2 ==0){
              Thread.sleep(10000L);
         }
-        User user = (User)userService.getUser();
-        System.out.println(user);
-        return JSONArray.toJSONString(user);
+//        User user = (User)userService.getUser();
+        userService.gtsTest();
+
+        return JSONArray.toJSONString(11);
     }
 }

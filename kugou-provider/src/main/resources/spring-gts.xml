@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 定义声明式事务，要想让事务annotation感知的话，要在这里定义一下，spring才能感知到噢 -->
+    <bean class="com.taobao.txc.client.aop.TxcTransactionScaner" id="txcScanner">
+        <constructor-arg value="myapp"/><!-- 应用名，用户自定义 -->
+        <constructor-arg value="txc_test_public.1129361738553704.QD"/><!-- 事务分组名 -->
+        <constructor-arg value="1" />
+        <constructor-arg value="https://test-cs-gts.aliyuncs.com" />
+    </bean>
+</beans>

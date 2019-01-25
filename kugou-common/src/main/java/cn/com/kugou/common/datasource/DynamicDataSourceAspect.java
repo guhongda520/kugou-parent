@@ -1,4 +1,4 @@
-package cn.com.kugou.provider.datasource;
+package cn.com.kugou.common.datasource;
 
 
 import org.aspectj.lang.JoinPoint;
@@ -31,7 +31,7 @@ public class DynamicDataSourceAspect {
     @Value("${datasource.primary}")
     private String primaryDataSource;
 
-    @Before("execution(* cn.com.kugou.*.serviceimpl.*.*(..))")
+    @Before("execution(* cn.com.kugou.*.daoimpl.*.*(..))")
     public void beforeSwitchDS(JoinPoint point){
         //获得当前访问的class
         Class<?> className = point.getTarget().getClass();
@@ -57,7 +57,7 @@ public class DynamicDataSourceAspect {
         DataSourceContextHolder.setDB(dataSource);
     }
 
-    @After("execution(* cn.com.kugou.*.serviceimpl.*.*(..))")
+    @After("execution(* cn.com.kugou.*.daoimpl.*.*(..))")
     public void afterSwitchDS(JoinPoint point){
         DataSourceContextHolder.clearDB();
     }

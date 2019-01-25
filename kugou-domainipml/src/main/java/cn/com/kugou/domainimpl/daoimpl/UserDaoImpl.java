@@ -1,5 +1,6 @@
 package cn.com.kugou.domainimpl.daoimpl;
 
+import cn.com.kugou.common.datasource.DS;
 import cn.com.kugou.domain.dao.UserDao;
 import cn.com.kugou.domain.entity.User;
 import cn.com.kugou.domain.mapper.UserMapper;
@@ -20,5 +21,16 @@ public class UserDaoImpl implements UserDao{
     @Override
     public User getUser() {
         return mapper.getUser();
+    }
+
+    @Override
+    public Integer deleteUser() {
+        return mapper.deleteUser();
+    }
+
+    @Override
+    @DS(value = "secondaryDataSource")
+    public Integer deleteUser2() {
+        return mapper.deleteUser2();
     }
 }

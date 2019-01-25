@@ -1,4 +1,4 @@
-package cn.com.kugou.provider.datasource;
+package cn.com.kugou.common.datasource;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

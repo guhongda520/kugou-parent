@@ -1,7 +1,6 @@
 package cn.com.kugou.common.email;
 
 import org.springframework.core.io.FileSystemResource;
-import org.springframework.mail.javamail.MimeMessageHelper;
 
 import javax.mail.internet.MimeMessage;
 import java.io.File;

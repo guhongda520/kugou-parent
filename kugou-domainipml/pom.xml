@@ -20,5 +20,9 @@
             <groupId>kugou.parents</groupId>
             <artifactId>kugou-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.taobao.txc</groupId>
+            <artifactId>txc-client</artifactId>
+        </dependency>
     </dependencies>
 </project>

@@ -10,4 +10,8 @@ import cn.com.kugou.domain.entity.User;
  */
 public interface UserDao {
     User getUser();
+
+    Integer deleteUser();
+
+    Integer deleteUser2();
 }

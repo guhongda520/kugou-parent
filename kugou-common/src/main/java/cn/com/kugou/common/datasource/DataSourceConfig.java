@@ -1,5 +1,7 @@
-package cn.com.kugou.provider.datasource;
+package cn.com.kugou.common.datasource;
 
+import com.taobao.txc.client.aop.TxcTransactionScaner;
+import com.taobao.txc.datasource.cobar.TxcDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -35,15 +37,15 @@ public class DataSourceConfig {
     @Bean(name = "primaryDataSource")
     @Qualifier("primaryDataSource")
     @ConfigurationProperties(prefix="spring.datasource.primary")
-    public DataSource primaryDataSource() {
-        return DataSourceBuilder.create().build();
+    public com.taobao.txc.datasource.cobar.TxcDataSource primaryDataSource() {
+        return new TxcDataSource();
     }
 
     @Bean(name = "secondaryDataSource")
     @Qualifier("secondaryDataSource")
     @ConfigurationProperties(prefix="spring.datasource.secondary")
-    public DataSource secondaryDataSource() {
-        return DataSourceBuilder.create().build();
+    public com.taobao.txc.datasource.cobar.TxcDataSource secondaryDataSource() {
+        return new TxcDataSource();
     }
 
     /**
@@ -67,14 +69,22 @@ public class DataSourceConfig {
         return dynamicDataSource;
     }
 
+
+//    @Bean(name = "txcScanner")
+////    @ConfigurationProperties(prefix="aluser")
+//    public TxcTransactionScaner txcTransactionScaner()
+//    {
+//        return  new TxcTransactionScaner("kugou");
+//    }
+
     /**
      * 配置@Transactional注解事物
      * @return
      */
-    @Bean
-    public PlatformTransactionManager transactionManager() {
-        return new DataSourceTransactionManager(dynamicDataSource());
-    }
+//    @Bean
+//    public PlatformTransactionManager transactionManager() {
+//        return new DataSourceTransactionManager(dynamicDataSource());
+//    }
 
     public String getPrimaryDataSource() {
         return primaryDataSource;
