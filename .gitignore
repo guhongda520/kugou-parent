@@ -1,5 +1,5 @@
 /target/
-/.settings/
+*/.settings/
 *.classpath
 *.project
 *.iml
@@ -7,6 +7,7 @@
 *.jar
 *.lst
 *.log
+*.prefs
 kugou-provider/target/
 kugou-server/target/
 kugou-common/target/
